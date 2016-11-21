@@ -18,6 +18,9 @@
 		98015BB51DE10F7E005A85B9 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98015BB41DE10F7E005A85B9 /* RoundButton.swift */; };
 		98015BB71DE1105D005A85B9 /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98015BB61DE1105D005A85B9 /* FancyField.swift */; };
 		98015BB91DE11163005A85B9 /* FancyBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98015BB81DE11163005A85B9 /* FancyBtn.swift */; };
+		98E8CB301DE256D300FDBAC9 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E8CB2F1DE256D300FDBAC9 /* FeedVC.swift */; };
+		98E8CB321DE26CB800FDBAC9 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E8CB311DE26CB800FDBAC9 /* CircleView.swift */; };
+		98E8CB341DE2715500FDBAC9 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E8CB331DE2715500FDBAC9 /* PostCell.swift */; };
 		C65C94F3D836A930B6E890DA /* Pods_Normal_People.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEC17A616A21EDD8AA8FC146 /* Pods_Normal_People.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +38,10 @@
 		98015BB41DE10F7E005A85B9 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		98015BB61DE1105D005A85B9 /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
 		98015BB81DE11163005A85B9 /* FancyBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyBtn.swift; sourceTree = "<group>"; };
+		98015BBA1DE12303005A85B9 /* Normal People.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Normal People.entitlements"; sourceTree = "<group>"; };
+		98E8CB2F1DE256D300FDBAC9 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		98E8CB311DE26CB800FDBAC9 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		98E8CB331DE2715500FDBAC9 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		AED981A4AFD6F10FC45A0632 /* Pods-Normal People.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Normal People.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Normal People/Pods-Normal People.debug.xcconfig"; sourceTree = "<group>"; };
 		BEC17A616A21EDD8AA8FC146 /* Pods_Normal_People.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Normal_People.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEFACD8CFA82944DCF109F95 /* Pods-Normal People.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Normal People.release.xcconfig"; path = "Pods/Target Support Files/Pods-Normal People/Pods-Normal People.release.xcconfig"; sourceTree = "<group>"; };
@@ -73,6 +80,7 @@
 		98015B971DDF90E9005A85B9 /* Normal People */ = {
 			isa = PBXGroup;
 			children = (
+				98015BBA1DE12303005A85B9 /* Normal People.entitlements */,
 				98015BB11DE10E12005A85B9 /* Utilities */,
 				98015BAE1DDF97D7005A85B9 /* Controller */,
 				98015BAD1DDF97D1005A85B9 /* View */,
@@ -101,6 +109,8 @@
 				98015BB41DE10F7E005A85B9 /* RoundButton.swift */,
 				98015BB61DE1105D005A85B9 /* FancyField.swift */,
 				98015BB81DE11163005A85B9 /* FancyBtn.swift */,
+				98E8CB311DE26CB800FDBAC9 /* CircleView.swift */,
+				98E8CB331DE2715500FDBAC9 /* PostCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -109,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				98015B9A1DDF90E9005A85B9 /* SignInVC.swift */,
+				98E8CB2F1DE256D300FDBAC9 /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -175,6 +186,11 @@
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = 2H22PSLHNQ;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -263,13 +279,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98E8CB321DE26CB800FDBAC9 /* CircleView.swift in Sources */,
 				98015BB71DE1105D005A85B9 /* FancyField.swift in Sources */,
 				98015B9B1DDF90E9005A85B9 /* SignInVC.swift in Sources */,
 				98015BB51DE10F7E005A85B9 /* RoundButton.swift in Sources */,
 				98015B991DDF90E9005A85B9 /* AppDelegate.swift in Sources */,
+				98E8CB301DE256D300FDBAC9 /* FeedVC.swift in Sources */,
 				98015BB01DE10D96005A85B9 /* FancyView.swift in Sources */,
 				98015BB31DE10E26005A85B9 /* Constants.swift in Sources */,
 				98015BB91DE11163005A85B9 /* FancyBtn.swift in Sources */,
+				98E8CB341DE2715500FDBAC9 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +412,7 @@
 			baseConfigurationReference = AED981A4AFD6F10FC45A0632 /* Pods-Normal People.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Normal People/Normal People.entitlements";
 				DEVELOPMENT_TEAM = 2H22PSLHNQ;
 				INFOPLIST_FILE = "Normal People/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -407,6 +427,7 @@
 			baseConfigurationReference = EEFACD8CFA82944DCF109F95 /* Pods-Normal People.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Normal People/Normal People.entitlements";
 				DEVELOPMENT_TEAM = 2H22PSLHNQ;
 				INFOPLIST_FILE = "Normal People/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
